@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #11100d;
+    color: #d6d0b8;
+    font-family: 'VT323', monospace;
+    font-size: 21px;
+    padding: 45px 20px;
+    background-image:
+        linear-gradient(rgba(214, 208, 184, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(214, 208, 184, 0.025) 1px, transparent 1px);
+    background-size: 8px 8px;
+}
+
+.terminal {
+    width: min(900px, 100%);
+    margin: auto;
+}
+
+header {
+    border-bottom: 3px solid #d6d0b8;
+    padding-bottom: 24px;
+    margin-bottom: 30px;
+}
+
+.terminal-label,
+.status {
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.terminal-label {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(20px, 4vw, 36px);
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.status {
+    margin-top: 18px;
+}
+
+.status::before {
+    content: "● ";
+}
+
+.students {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.student {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 18px;
+    padding-bottom: 28px;
+    border-bottom: 1px dashed #77715f;
+}
+
+.index {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.student h2 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(13px, 2vw, 18px);
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.student p {
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.student strong {
+    font-weight: normal;
+}
+
+footer {
+    margin-top: 35px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+footer span {
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 30px 16px;
+    }
+
+    .student {
+        grid-template-columns: 40px 1fr;
+        gap: 10px;
+    }
+
+    .student h2 {
+        font-size: 12px;
+    }
+}
