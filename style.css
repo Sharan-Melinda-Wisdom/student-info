@@ -96,6 +96,29 @@ h1 {
     font-weight: normal;
 }
 
+.details-btn {
+    margin-top: 12px;
+    padding: 6px 14px;
+    background: transparent;
+    color: #d6d0b8;
+    border: 1px solid #d6d0b8;
+    font-family: 'VT323', monospace;
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.details-btn:hover {
+    background: #d6d0b8;
+    color: #11100d;
+}
+
+.details {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px dashed #77715f;
+}
+
 footer {
     margin-top: 35px;
     font-size: 18px;
