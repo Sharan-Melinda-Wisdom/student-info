@@ -67,6 +67,11 @@ h1 {
     gap: 18px;
     padding-bottom: 28px;
     border-bottom: 1px dashed #77715f;
+    transition: transform 0.15s ease;
+}
+
+.student:hover {
+    transform: translateX(8px);
 }
 
 .index {
